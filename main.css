@@ -1,0 +1,119 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 767px) {
+  .content {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: cover;
+  }
+}
+.content .box {
+  width: 350px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.box img {
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.box h3 {
+  font-weight: 900;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: hsl(223, 47%, 23%);
+}
+
+.box p {
+  color: rgb(31 47 86 / 64%);
+  font-size: 15px;
+  width: 80%;
+  margin: 0px auto 15px;
+}
+
+.box .plans {
+  background-color: hsl(225, 100%, 98%);
+  width: 85%;
+  display: flex;
+
+  align-items: center;
+  padding: 15px 0;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.box .plans img {
+  margin: 0 20px;
+}
+.box .plans a {
+  margin-right: 15px;
+  color: hsl(245, 75%, 52%);
+}
+.box .plans a:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+.box .plans .plan {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box .plans .plan span:first-child {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.box .plans .plan span:last-child {
+  color: hsl(223, 47%, 23%);
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+.box .proceed {
+  color: white;
+  display: block;
+  margin: 25px auto 15px auto;
+  padding: 12px 15px;
+  width: 80%;
+  border-radius: 6px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0px 10px 20px 0px #766cf191;
+}
+.box .proceed:hover {
+  background-color: #766cf1;
+}
+.box .cancel {
+  display: block;
+  opacity: 0.6;
+  padding-bottom: 30px;
+  padding-top: 10px;
+
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 13px;
+  color: hsl(223, 47%, 23%);
+}
+
+.box .cancel:hover {
+  color: black;
+  opacity: 1;
+}
